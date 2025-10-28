@@ -21,3 +21,55 @@ function calculate() {
         alert('Invalid expression');
     }
 }
+document.body.addEventListener(
+    'keydown',(event)=> {
+        if(event.key==='1') {
+            appendNumber('1');
+        }
+        else if(event.key==='2') {
+            appendNumber('2');
+        }
+        else if(event.key==='3') {
+            appendNumber('3')
+        }
+        else if(event.key==='4') {
+            appendNumber('4');
+        }
+        else if (event.key==='5') {
+            appendNumber('5');
+        }
+        else if(event.key==='6') {
+            appendNumber('6');
+        }
+        else if(event.key==='7') {
+            appendNumber('7');
+        }
+        else if (event.key==='8') {
+            appendNumber('8');
+        }
+        else if (event.key==='9') {
+            appendNumber('9');
+        }
+        else if (event.key==='0') {
+            appendNumber('0');
+        }
+        else if (event.key==='+') {
+            appendOperator('+');
+        }
+        else if (event.key==='-') {
+            appendOperator('-');
+        }
+        else if(event.key==='*') {
+            appendOperator('*');
+        }
+        else if (event.key==='/') {
+            appendOperator('/');
+        }
+        else if (event.key==='Backspace') {
+            remove();
+        }
+        else if (event.key==='Enter') {
+            calculate();
+        }
+    }
+)
