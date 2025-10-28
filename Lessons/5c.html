@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<body>
+    <script>
+        const coffe=5;
+        const  bagels=3;
+        const soup=9;
+        const calculation=Number(`${coffe}`)+(2*Number(`${bagels}`))+Number(`${soup}`);
+        let cost=0;
+        cost=`${calculation}`;
+        let tax=0;
+        tax=cost*0.1;
+        let TotalCost=0;
+        TotalCost=(Number(cost)+Number(tax));
+        console.log(cost);
+        console.log(tax)
+        console.log(`Total cost:$${TotalCost}`);
+    </script>
+</body>
+</html>

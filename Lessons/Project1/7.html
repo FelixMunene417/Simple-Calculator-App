@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        function greet(name) {
+            !name?console.log(`Hi there`) : console.log(`Hello ${name}`)
+        }
+        greet('Felix');
+        greet('Jane');
+        greet('');
+        greet('Njomo');
+        //Convert to Farenheit.
+        const temp=convertToFarenheit(25);
+        function convertToFarenheit(temperature) {
+            const Temp=((Number(`${temperature}`)*(9/5))+32);
+            return Temp;
+        }
+        console.log(temp);
+        //Convert to celsius.
+        const result=convertToCelsius(86);
+        function convertToCelsius (Farenheit) {
+            const farenheit=(Number(`${Farenheit}`)-32)*(5/9);
+            return farenheit;
+        }
+        console.log(result);
+
+    //It now takes unit.
+    function convertTemperature (degrees,unit) {
+        if (unit!=='f' && unit !=='c') {
+            console.log('Enter c,C or f,F only.Please try again!');
+        }
+        
+       else if(unit==='C'|| unit==='c') {
+        const result=convertToCelsius(`${degrees}`);
+        function convertToCelsius (Farenheit) {
+            const farenheit=(Number(`${Farenheit}`)-32)*(5/9);
+            return farenheit;
+        }
+        console.log(result);
+        }
+        else if (unit==='F'|| 'f') {
+         const temp=convertToFarenheit(`${degrees}`);
+        function convertToFarenheit(temperature) {
+            const Temp=((Number(`${temperature}`)*(9/5))+32);
+            return Temp;
+        }
+        console.log(temp);
+        }
+        
+    }
+    convertTemperature(25,'f');
+    //Converting length.
+    function convertLength (length,from,to) {
+        if (from!=='km'&& from!=='miles' && to!=='km'&& to!=='miles') {
+            console.log(`Invalid input (${from}) on (\"conversion from").. and  invalid input (${to}) on (\"conversion to"). Use km or miles only.`);
+        }
+        else if (from!=='km' && from!=='miles') {
+            console.log(`Invalid input (${from}) on (\"conversion from"). Use km or miles only.Please try again`);
+        }
+        else if (to!=='miles' && to!=='km') {
+            console.log(`invalid input (${to}) on (\"conversion to"). Use km or miles only.Please try again`);
+        }
+        else if(from==='km' && to==='km') {
+            console.log(length);
+        }
+        else if (from==='miles' && to==='miles') {
+            console.log(length);
+        }
+        else if (from==='km' && to==='miles') {
+           const display=Number(`${length}`)/1.6;
+           console.log(display);
+        }
+        else if (from==='miles' && to==='km') {
+            const convertion=Number(`${length}`)*1.6;
+            console.log(convertion);
+        }
+    }
+     convertLength(32,'km','miles');
+    </script>
+</body>
+</html>

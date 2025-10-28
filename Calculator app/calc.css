@@ -1,0 +1,70 @@
+ body {
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+ }
+ .calc-container {
+    box-shadow: 1px 2px 5px;
+    padding: 7px 7px;
+    padding-top: 10px;
+    border-style: solid;
+    border: none;
+    width: 327px;
+    background-color: rgb(240, 238, 238);
+    border-radius: 5px;
+ }
+ .btn-grid {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    column-gap: 15px;
+    row-gap: 15px;
+ }
+ .input-scrn {
+    width: 320px;
+    height: 44px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: green;
+ }
+.content-grid {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    row-gap: 50px;
+    width: 325px;
+    padding-bottom: 20px;
+
+}
+.btn-styles {
+    border: none;
+    font-size: xx-large;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px;
+    cursor: pointer;
+    background-color: rgb(241, 241, 204);
+}
+.btn-styles:active{
+    border-radius: 50%;
+    transition: 0.05s;
+}
+#operator {
+    background-color: rgb(103, 103, 238);
+}
+#operator:hover {
+    background-color: purple;
+}
+#clear {
+    background-color: rgb(255, 33, 33);
+}
+#clear:hover {
+    opacity: 0.7;
+}
+#answer {
+    background-color: rgb(27, 211, 27);
+}
+#answer:hover {
+    opacity: 0.6;
+}
+.btn-styles:hover {
+    background-color: aqua;
+}
